@@ -1,0 +1,24 @@
+1. Function with parameters remembered, forgotten, and average.
+2. Calculate totalRolls as the sum of the length of remembered and forgotten.
+3. Calculate rememberedTotal as the sum of all elements in remembered.
+4. Calculate averageTotal as the product of average and totalRolls.
+5. Calculate missingTotal as the difference between averageTotal and rememberedTotal.
+6. 
+       
+    a. If forgotten is 0:
+        i. Check if average is equal to rememberedTotal divided by the length of remembered:
+            If not, return [0].
+        ii. If yes, return an array of size forgotten filled with average.I'll use this to avoid looping.
+
+    b. If missingTotal is greater than forgotten multiplied by 6 or less than forgotten:
+        should return [0] since it's not possible to achieve the average mean.
+
+     c. If totalRolls is less than the length of remembered:
+        Return [0] because there are not enough rolls.   
+7. Initialize an empty array.
+8. Loop over possible dice rolls:
+    a. Check if the difference between missingTotal and the current roll is within the valid range [1, 6]:
+        i. If yes, add the current roll to the outcome.
+9. Check if there are valid rolls in the outcome array:
+    a. If yes, return the outcome.
+    b. If no, return [0].
